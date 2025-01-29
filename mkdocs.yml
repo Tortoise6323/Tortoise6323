@@ -1,4 +1,4 @@
-site_name: EGR314 Report Template
+site_name: Ian Anderson
 site_url: https://embedded-systems-design.github.io/template_report
 repo_url: https://github.com/embedded-systems-design/template_report
 edit_uri: edit/main/docs/
@@ -56,6 +56,11 @@ extra_javascript:
  - javascripts/mathjax.js
  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     
+nav:
+ - Home: index.md
+ - Block Diagram: block.md
+ - Appendix: appendix.md
+
 not_in_nav: |
   static
   

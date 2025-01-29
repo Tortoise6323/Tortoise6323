@@ -5,15 +5,11 @@ tags:
 - tag2
 ---
 
-## The start
+## Subsystem Documentation
 
-This is an edited version of the forked repository for EGR 314
+### Ian Anderson
 
-Random stuff | More random stuff
--------------|------------------
-ooga         | booga
+[Block Diagram](./block.md)
+[Appendix](./appendix.md)
 
-### super cool subheading
-1. random item 1
-2. random item 2
-3. random item 3
+#### EGR 314 - Team 306
