@@ -9,7 +9,7 @@ tags:
 
 ### Ian Anderson
 
-[Block Diagram](./block.md)
+[Block Diagram](./block.md)  
 [Appendix](./appendix.md)
 
 #### EGR 314 - Team 306
