@@ -7,7 +7,7 @@ theme:
   custom_dir: custom_theme/
   palette:
     primary: sage
-    accent: indigo
+    accent: green
   font:
     text: Roboto
   logo: static/logo.svg
