@@ -59,6 +59,7 @@ extra_javascript:
 nav:
  - Home: index.md
  - Block Diagram: block.md
+ - Component Selection: component.md
  - Appendix: appendix.md
 
 not_in_nav: |

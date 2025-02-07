@@ -10,6 +10,7 @@ tags:
 ### Ian Anderson
 
 [Block Diagram](./block.md)  
+[Component Selection](./component.md)  
 [Appendix](./appendix.md)
 
 #### EGR 314 - Team 306
