@@ -2,6 +2,6 @@
 title: Block Diagram
 ---
 
-## Wind Speed Subsystem
+## Sensor Suite Subsystem
 
 ![Block Diagram](./assets/images/Block01.png)
