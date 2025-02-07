@@ -42,6 +42,8 @@ Rational:
 
 Option | Pros | Cons
 ---|---|---
+![hall1](./assets/images/hall1.jpg) <br>[IQS620A-0-DNR](https://www.digikey.com/en/products/detail/azoteq-pty-ltd/IQS620A-0-DNR/8259215)<br>$0.76/each<br>[datasheet](https://www.azoteq.com/images/stories/pdf/iqs620_datasheet.pdf) | - something | - something
+![hall2](./assets/images/hall2.jfif) <br>[MAX9621AUB+](https://www.digikey.com/en/products/detail/analog-devices-inc-maxim-integrated/MAX9621AUB/2239092)<br>$3.65/each<br>[datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX9621.pdf) | - something | - something
 
 Selected Component:  
 Rational:
