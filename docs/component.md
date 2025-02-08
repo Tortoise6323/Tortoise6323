@@ -11,13 +11,11 @@ title: Component Selection
 - Hall Effect Sensor
   - IQS620A-0-DNR
 - Temperature Sensor
-  - LM75BDP,118
+  - HDC3020DEFR
 - Humidity Sensor
   - HDC3020DEFR
 - Air Pressure Sensor
   - LPS22HBTR
-- Solar Tracker Sensor
-  - *part*
 
 ### Microcontroller
 
@@ -28,7 +26,7 @@ Option |  Pros | Cons
 ![micro3](./assets/images/micro3.jfif)<br>[PIC18LF8723-I/PT](https://www.digikey.com/en/products/detail/microchip-technology/PIC18LF8723-I-PT/1681042) <br> $16.85/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/39894b.pdf) | - 128kB Memory<br><br>- 70 IO pins<br><br>- Allows for more redundant wiring | - Excessive connection points<br><br>- Expensive<br><br>- Overkill for requirements
 
 Selected Component: Option 1 - PIC18F47Q10-I/PT  
-Rational: This microcontroller satisfies my group's needs for microcontroller capabilities for our project. Keeping all used microcontrollers the same aids to allow for easy integration. This option is also the most inexpensive option and allows for budget to be allocated elsewhere.
+Rational: This option satisfies the requirements for my team's microcontroller. It is also the easiest to work with as it is used compiously within our course and is familiar. This option also uses very little of the budget and allows for funds to be allocated elsewhere.
 
 ### Voltage Regulator
 
@@ -39,7 +37,7 @@ Option | Pros | Cons
 ![pwr3](./assets/images/pwr3.jpg)<br>[LM2675MX-3.3/NOPB](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)<br>$4.36/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/lm2675.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738976377161&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flm2675) | - Large input voltage range<br><br>- High maximum input voltage<br><br>- Larger operational temperature range | - Limited 1A output capacity<br><br>- Higher minimum input voltage<br><br>- Lower switching frequency<br><br>- Expensive
 
 Selected Component: Option 1 - AP63203WU-7  
-Rational: This switching power supply has the desired output of 3.3 volts and has a decent current capacity. It is also in a package that is easily soldered by hand.
+Rational: This switching power supply has the desired output of 3.3 volts and has a decent current capacity. It is also in a package that is easily soldered by hand. The higher switching frequency makes it better suited to the lower input voltages.
 
 ### Hall Effect Sensor (Wind Speed)
 
@@ -60,19 +58,19 @@ Option | Pros | Cons
 ![temp2](./assets/images/temp2.jpg)<br>[LM75AD,118](https://www.digikey.com/en/products/detail/nxp-usa-inc/LM75AD-118/1692795)<br>$0.66/each<br>[datasheet](https://www.nxp.com/docs/en/data-sheet/LM75A.pdf) | - I2C data interface<br><br>- Higher resolution<br><br>- Programmable limit<br><br>- Inexpensive | - Larger component<br><br>- Unnecessary extra features
 ![temp3](./assets/images/temp3.jpg)<br>[LM75BDP,118](https://www.digikey.com/en/products/detail/nxp-usa-inc/LM75BDP-118/2075977)<br>$0.61/each<br>[datasheet](https://www.nxp.com/docs/en/data-sheet/LM75B.pdf) | - I2C data interface<br><br>- Higher resolution<br><br>- Programable limit<br><br>- Inexpensive | - Larger component
 
-Selected Component: Option 3 - LM75BDP,118  
-Rational: This option has extra functionality that aids the project and is the most inexpensive option.
+Selected Component: Other - HDC3020DEFR  
+Rational: The selected component for the humidity sensor doubles as a temperature sensor. This eliminates the need for a standalone sensor.
 
 ### Humidity Sensor
 
 Option | Pros | Cons
 ---|---|---
-![hum1](./assets/images/hum1.jpg)<br>[HDC3020DEFR](https://www.digikey.com/en/products/detail/texas-instruments/HDC3020DEFR/17884961)<br>$2.55/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/hdc3020.pdf) | - Wide operational voltage range<br><br>- 0.5% Accuracy<br><br>- I2C data interface<br><br>- 4s response time | - Expensive
+![hum1](./assets/images/hum1.jpg)<br>[HDC3020DEFR](https://www.digikey.com/en/products/detail/texas-instruments/HDC3020DEFR/17884961)<br>$2.55/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/hdc3020.pdf) | - Includes temperature sensor<br><br>- 0.5% Accuracy<br><br>- I2C data interface<br><br>- 4s response time | - Expensive<br><br>- Difficult package to solder
 ![hum2](./assets/images/hum2.jpg)<br>[SHT40-AD1B-R3](https://www.digikey.com/en/products/detail/sensirion-ag/SHT40-AD1B-R3/14322709)<br>$1.81/each<br>[datasheet](https://sensirion.com/media/documents/33FD6951/662A593A/HT_DS_Datasheet_SHT4x.pdf) | - 1.8% Accuracy<br><br>- I2C data interface<br><br>- 4s response time | - Narrow operational voltage range
 ![hum3](./assets/images/hum3.jpg)<br>[SHTC3-TR-10KS](https://www.digikey.com/en/products/detail/sensirion-ag/SHTC3-TR-10KS/9477851)<br>$2.06/each<br>[datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/906/HT_DS_SHTC3_D1.pdf) | - 2% Accuracy<br><br>- I2C data interface | - Narrow operational voltage range<br><br>- 8s response time
 
 Selected Component: Option 1 - HDC3020DEFR  
-Rational: This option boasts the best accuracy whilst using I2C for data communication. It also has a fast response time.
+Rational: This option boasts the best accuracy whilst using I2C for data communication. It also has a fast response time. This option also has a temperature sensor included so less components are required.
 
 ### Air Pressure Sensor
 
