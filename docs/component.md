@@ -4,12 +4,14 @@ title: Component Selection
 
 ## Required & Selected Components
 
-Microcontroller     - PIC18F47Q10-I/PT  
-Volatage Regulator  - AP63203WU-7  
-Hall Effect Sensor  - IQS620A-0-DNR  
-Temperature Sensor  - HDC3020DEFR  
-Humidity Sensor     - HDC3020DEFR  
-Air Pressure Sensor - LPS22HBTR
+Component Name      | Selection
+--------------------|-----------------
+Microcontroller     | PIC18F47Q10-I/PT  
+Volatage Regulator  | AP63203WU-7  
+Hall Effect Sensor  | IQS620A-0-DNR  
+Temperature Sensor  | HDC3020DEFR  
+Humidity Sensor     | HDC3020DEFR  
+Air Pressure Sensor | LPS22HBTR
 
 ### Microcontroller
 
