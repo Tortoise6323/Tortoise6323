@@ -597,13 +597,11 @@
 <li>Hall Effect Sensor</li>
 <li>IQS620A-0-DNR</li>
 <li>Temperature Sensor</li>
-<li>LM75BDP,118</li>
+<li>HDC3020DEFR</li>
 <li>Humidity Sensor</li>
 <li>HDC3020DEFR</li>
 <li>Air Pressure Sensor</li>
 <li>LPS22HBTR</li>
-<li>Solar Tracker Sensor</li>
-<li><em>part</em></li>
 </ul>
 <h3 id="microcontroller">Microcontroller</h3>
 <table>
@@ -633,7 +631,7 @@
 </tbody>
 </table>
 <p>Selected Component: Option 1 - PIC18F47Q10-I/PT<br />
-Rational: This microcontroller satisfies my group's needs for microcontroller capabilities for our project. Keeping all used microcontrollers the same aids to allow for easy integration. This option is also the most inexpensive option and allows for budget to be allocated elsewhere.</p>
+Rational: This option satisfies the requirements for my team's microcontroller. It is also the easiest to work with as it is used compiously within our course and is familiar. This option also uses very little of the budget and allows for funds to be allocated elsewhere.</p>
 <h3 id="voltage-regulator">Voltage Regulator</h3>
 <table>
 <thead>
@@ -662,7 +660,7 @@ Rational: This microcontroller satisfies my group's needs for microcontroller ca
 </tbody>
 </table>
 <p>Selected Component: Option 1 - AP63203WU-7<br />
-Rational: This switching power supply has the desired output of 3.3 volts and has a decent current capacity. It is also in a package that is easily soldered by hand.</p>
+Rational: This switching power supply has the desired output of 3.3 volts and has a decent current capacity. It is also in a package that is easily soldered by hand. The higher switching frequency makes it better suited to the lower input voltages.</p>
 <h3 id="hall-effect-sensor-wind-speed">Hall Effect Sensor (Wind Speed)</h3>
 <table>
 <thead>
@@ -719,8 +717,8 @@ Rational: This option is simple to implement, and while it has the highest curre
 </tr>
 </tbody>
 </table>
-<p>Selected Component: Option 3 - LM75BDP,118<br />
-Rational: This option has extra functionality that aids the project and is the most inexpensive option.</p>
+<p>Selected Component: Other - HDC3020DEFR<br />
+Rational: The selected component for the humidity sensor doubles as a temperature sensor. This eliminates the need for a standalone sensor.</p>
 <h3 id="humidity-sensor">Humidity Sensor</h3>
 <table>
 <thead>
@@ -733,8 +731,8 @@ Rational: This option has extra functionality that aids the project and is the m
 <tbody>
 <tr>
 <td><a class="glightbox" href="../assets/images/hum1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum1" src="../assets/images/hum1.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/HDC3020DEFR/17884961">HDC3020DEFR</a><br>$2.55/each<br><a href="https://www.ti.com/lit/ds/symlink/hdc3020.pdf">datasheet</a></td>
-<td>- Wide operational voltage range<br><br>- 0.5% Accuracy<br><br>- I2C data interface<br><br>- 4s response time</td>
-<td>- Expensive</td>
+<td>- Includes temperature sensor<br><br>- 0.5% Accuracy<br><br>- I2C data interface<br><br>- 4s response time</td>
+<td>- Expensive<br><br>- Difficult package to solder</td>
 </tr>
 <tr>
 <td><a class="glightbox" href="../assets/images/hum2.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum2" src="../assets/images/hum2.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/sensirion-ag/SHT40-AD1B-R3/14322709">SHT40-AD1B-R3</a><br>$1.81/each<br><a href="https://sensirion.com/media/documents/33FD6951/662A593A/HT_DS_Datasheet_SHT4x.pdf">datasheet</a></td>
@@ -749,7 +747,7 @@ Rational: This option has extra functionality that aids the project and is the m
 </tbody>
 </table>
 <p>Selected Component: Option 1 - HDC3020DEFR<br />
-Rational: This option boasts the best accuracy whilst using I2C for data communication. It also has a fast response time.</p>
+Rational: This option boasts the best accuracy whilst using I2C for data communication. It also has a fast response time. This option also has a temperature sensor included so less components are required.</p>
 <h3 id="air-pressure-sensor">Air Pressure Sensor</h3>
 <table>
 <thead>
