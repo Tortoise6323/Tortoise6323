@@ -1,6 +1,6 @@
 site_name: Ian Anderson
-site_url: https://embedded-systems-design.github.io/template_report
-repo_url: https://github.com/embedded-systems-design/template_report
+site_url: https://tortoise6323.github.io/Tortoise6323/
+repo_url: https://github.com/Tortoise6323/Tortoise6323
 edit_uri: edit/main/docs/
 theme:
   name: material
@@ -65,7 +65,7 @@ nav:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2024 team-name-here"
+copyright: "Copyright &copy; 2025 Macrochip"
 
 extra:
   generator: false
