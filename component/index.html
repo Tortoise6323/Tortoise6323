@@ -625,11 +625,11 @@
 </tr>
 <tr>
 <td>Temperature Sensor</td>
-<td>HDC3020DEFR</td>
+<td>HIH6030-021-001</td>
 </tr>
 <tr>
 <td>Humidity Sensor</td>
-<td>HDC3020DEFR</td>
+<td>HIH6030-021-001</td>
 </tr>
 <tr>
 <td>Air Pressure Sensor</td>
@@ -755,7 +755,7 @@ Rational: This option provides an I2C compatible rotary hall effect sensor. The 
 </tr>
 </tbody>
 </table>
-<p>Selected Component: Other - HDC3020DEFR<br />
+<p>Selected Component: Other - HIH6030-021-001<br />
 Rational: The selected component for the humidity sensor doubles as a temperature sensor. This eliminates the need for a standalone sensor.</p>
 <h3 id="humidity-sensor">Humidity Sensor</h3>
 <table>
@@ -768,24 +768,24 @@ Rational: The selected component for the humidity sensor doubles as a temperatur
 </thead>
 <tbody>
 <tr>
-<td><a class="glightbox" href="../assets/images/hum1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum1" src="../assets/images/hum1.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/HDC3020DEFR/17884961">HDC3020DEFR</a><br>$2.55/each<br><a href="https://www.ti.com/lit/ds/symlink/hdc3020.pdf">datasheet</a></td>
-<td>- Includes temperature sensor<br><br>- 0.5% Accuracy<br><br>- I2C data interface<br><br>- 4s response time</td>
-<td>- Expensive<br><br>- Difficult package to solder<br><br>- More complicated communication</td>
+<td><a class="glightbox" href="../assets/images/hum1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum1" src="../assets/images/hum1.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/HIH6030-021-001/17884961">HIH6030-021-001</a><br>$2.55/each<br><a href="https://www.ti.com/lit/ds/symlink/hdc3020.pdf">datasheet</a></td>
+<td>- I2C data interface<br><br>- Has temperature output<br><br>- Most inexpensive option<br><br>- Highest accuracy</td>
+<td>- Extremely difficult to solder<br><br>- Tiny chip size<br><br>- Lacks standard mode I2C speed</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/hum2.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum2" src="../assets/images/hum2.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/sensirion-ag/SHT40-AD1B-R3/14322709">SHT40-AD1B-R3</a><br>$1.81/each<br><a href="https://sensirion.com/media/documents/33FD6951/662A593A/HT_DS_Datasheet_SHT4x.pdf">datasheet</a></td>
-<td>- 1.8% Accuracy<br><br>- I2C data interface<br><br>- 4s response time</td>
-<td>- Narrow operational voltage range<br><br>- Very difficult to solder<br><br>- Small</td>
+<td><a class="glightbox" href="../assets/images/hum2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum2" src="../assets/images/hum2.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/HIH6030-021-001/4291625">H6030-021-001</a><br>$6.67/each<br><a href="https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/humidity-with-temperature-sensors/honeywell-humidicon-hih6000-series/documents/sps-siot-hih6000-datasheet-009073-7-en-ciid-147070.pdf">datasheet</a></td>
+<td>- I2C data interface<br><br>- Has temperature output<br><br>- Affordable cost</td>
+<td>- Lowest relative humidity accuracy<br><br>- Non-condensing</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/hum3.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum3" src="../assets/images/hum3.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/sensirion-ag/SHTC3-TR-10KS/9477851">SHTC3-TR-10KS</a><br>$2.06/each<br><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/906/HT_DS_SHTC3_D1.pdf">datasheet</a></td>
-<td>- 2% Accuracy<br><br>- I2C data interface</td>
-<td>- Narrow operational voltage range<br><br>- 8s response time<br><br>- Very difficult to solder</td>
+<td><a class="glightbox" href="../assets/images/hum3.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum3" src="../assets/images/hum3.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/HIH6131-000-001/5253024">HIH6131-000-001</a><br>$18.09/each<br><a href="https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/humidity-with-temperature-sensors/honeywell-humidicon-hih6100-series/documents/sps-siot-humidicon-hih6100-series-product-sheet-009059-6-en-ciid-142165.pdf">datasheet</a></td>
+<td>- SPI data interface<br><br>- Has temperature output<br><br>- Protected from condensation</td>
+<td>- Does not support I2C<br><br>- Very expensive option</td>
 </tr>
 </tbody>
 </table>
-<p>Selected Component: Option 1 - HDC3020DEFR<br />
-Rational: This option boasts the best accuracy whilst using I2C for data communication. It also has a fast response time. This option also has a temperature sensor included so less components are required.</p>
+<p>Selected Component: Option 2 - HIH6030-021-001<br />
+Rational: This option has the lowest accuracy; however, its larger package is easier to solder and supports I2C communication. It also doubles as a temperature sensor which offsets the increased cost.</p>
 <h3 id="air-pressure-sensor">Air Pressure Sensor</h3>
 <table>
 <thead>
