@@ -11,7 +11,7 @@ Volatage Regulator  | AP63203WU-7
 Hall Effect Sensor  | AS5600L-ASOM SOIC LF T&RDP  
 Temperature Sensor  | HIH6030-021-001  
 Humidity Sensor     | HIH6030-021-001  
-Air Pressure Sensor | LPS22HBTR
+Air Pressure Sensor | MS580301BA01-00
 Comparator          | MCP6541RT-E/OT
 
 ### Microcontroller
@@ -30,7 +30,7 @@ Rational: This option satisfies the requirements for my team's microcontroller. 
 Option | Pros | Cons
 ---|---|---
 ![pwr1](./assets/images/pwr1.jpg)<br>[AP63203WU-7](https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426)<br>$1.38/each<br>[datasheet](https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf) | - Large input voltage range<br><br>- 2A output capacity<br><br>- Simple application circuitry<br><br>- Reduced electromagnetic interference | - Smaller operational temperature range<br><br>- Small package
-![pwr2](./assets/images/pwr2.jfif)<br>[TPS62132RGTR](https://www.digikey.com/en/products/detail/texas-instruments/TPS62132RGTR/2786726)<br>$1.71/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/tps62130.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738923213197) | - 3A output capacity<br><br>- High switching speed<br><br>- Lowest minimum input voltage<br><br>- Provides short circuit protection | - Smaller input voltage range<br><br>- Difficult solder pads<br><br>- Complicated application circuitry
+![pwr2](./assets/images/pwr2.jfif)<br>[TPS62132RGTR](https://www.digikey.com/en/products/detail/texas-instruments/TPS62132RGTR/2786726)<br>$1.71/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/tps62130.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738923213197) | - 3A output capacity<br><br>- High switching speed<br><br>- Lowest minimum input voltage<br><br>- Provides short circuit protection | - Smaller input voltage range<br><br>- Impossible to solder by hand<br><br>- Complicated application circuitry
 ![pwr3](./assets/images/pwr3.jpg)<br>[LM2675MX-3.3/NOPB](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)<br>$4.36/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/lm2675.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738976377161&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flm2675) | - Large input voltage range<br><br>- High maximum input voltage<br><br>- Larger operational temperature range<br><br>- Has variable output version | - Limited 1A output capacity<br><br>- Higher minimum input voltage<br><br>- Lower switching frequency<br><br>- Expensive
 
 Selected Component: Option 1 - AP63203WU-7  
@@ -62,8 +62,8 @@ Rational: The selected component for the humidity sensor doubles as a temperatur
 
 Option | Pros | Cons
 ---|---|---
-![hum1](./assets/images/hum1.jpg)<br>[HIH6030-021-001](https://www.digikey.com/en/products/detail/texas-instruments/HIH6030-021-001/17884961)<br>$2.55/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/hdc3020.pdf) | - I2C data interface<br><br>- Has temperature output<br><br>- Most inexpensive option<br><br>- Highest accuracy | - Extremely difficult to solder<br><br>- Tiny chip size<br><br>- Lacks standard mode I2C speed
-![hum2](./assets/images/hum2.jfif)<br>[H6030-021-001](https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/HIH6030-021-001/4291625)<br>$6.67/each<br>[datasheet](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/humidity-with-temperature-sensors/honeywell-humidicon-hih6000-series/documents/sps-siot-hih6000-datasheet-009073-7-en-ciid-147070.pdf) | - I2C data interface<br><br>- Has temperature output<br><br>- Affordable cost | - Lowest relative humidity accuracy<br><br>- Non-condensing
+![hum1](./assets/images/hum1.jpg)<br>[HIH6030-021-001](https://www.digikey.com/en/products/detail/texas-instruments/HIH6030-021-001/17884961)<br>$2.55/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/hdc3020.pdf) | - I2C data interface<br><br>- Has temperature output<br><br>- Most inexpensive option<br><br>- Highest accuracy | - Impossible to solder by hand<br><br>- Tiny chip size<br><br>- Lacks standard mode I2C speed
+![hum2](./assets/images/hum2.jfif)<br>[HIH6030-021-001](https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/HIH6030-021-001/4291625)<br>$6.67/each<br>[datasheet](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/humidity-with-temperature-sensors/honeywell-humidicon-hih6000-series/documents/sps-siot-hih6000-datasheet-009073-7-en-ciid-147070.pdf) | - I2C data interface<br><br>- Has temperature output<br><br>- Affordable cost | - Lowest relative humidity accuracy<br><br>- Non-condensing
 ![hum3](./assets/images/hum3.jpg)<br>[HIH6131-000-001](https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/HIH6131-000-001/5253024)<br>$18.09/each<br>[datasheet](https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/humidity-with-temperature-sensors/honeywell-humidicon-hih6100-series/documents/sps-siot-humidicon-hih6100-series-product-sheet-009059-6-en-ciid-142165.pdf) | - SPI data interface<br><br>- Has temperature output<br><br>- Protected from condensation | - Does not support I2C<br><br>- Very expensive option
 
 Selected Component: Option 2 - HIH6030-021-001  
@@ -73,12 +73,12 @@ Rational: This option has the lowest accuracy; however, its larger package is ea
 
 Option | Pros | Cons
 ---|---|---
-![air1](./assets/images/air1.jpg)<br>[DPS368XTSA1](https://www.digikey.com/en/products/detail/infineon-technologies/DPS368XTSA1/10244079)<br>$2.51/each<br>[datasheet](https://www.infineon.com/dgdl/Infineon-DPS368-DS-v01_00-EN.pdf?fileId=5546d46269e1c019016a0c45105d4b40) | - Supports I2C & SPI communication<br><br>- Simpler footprint<br><br>- Measures temperature | - Vented guage <br><br>- Smaller pressure range<br><br>- Difficult soldering points
-![air2](./assets/images/air2.jpg)<br>[ENS220S-BLGT](https://www.digikey.com/en/products/detail/sciosense/ENS220S-BLGT/21278457)<br>$2.70/each<br>[datasheet](https://www.sciosense.com/wp-content/uploads/2023/12/ENS220-Datasheet.pdf) | - Adequate pressure range<br><br>- Supports I2C & SPI communication<br><br>- Absolute pressure guage<br><br>- Measures temperature | - Very low operational voltage range<br><br>- Less suited for application<br><br>- Difficult soldering points
-![air3](./assets/images/air3.jpg)<br>[LPS22HBTR](https://www.digikey.com/en/products/detail/stmicroelectronics/LPS22HBTR/5799910)<br>$2.81/each<br>[datasheet](https://www.st.com/content/ccc/resource/technical/document/datasheet/bf/c1/4f/23/61/17/44/8a/DM00140895.pdf/files/DM00140895.pdf/jcr:content/translations/en.DM00140895.pdf) | - Adequate pressure range<br><br>- Supports I2C & SPI communication<br><br>- Absolute pressure guage | - Difficult soldering points<br><br>- Most expensive option<br><br>- Doesn't return temperature
+![air1](./assets/images/air1.jpg)<br>[DPS368XTSA1](https://www.digikey.com/en/products/detail/infineon-technologies/DPS368XTSA1/10244079)<br>$2.51/each<br>[datasheet](https://www.infineon.com/dgdl/Infineon-DPS368-DS-v01_00-EN.pdf?fileId=5546d46269e1c019016a0c45105d4b40) | - Supports I2C & SPI communication<br><br>- Simpler footprint<br><br>- Measures temperature | - Vented guage <br><br>- Smaller pressure range<br><br>- Impossible to solder by hand
+![air2](./assets/images/air2.jpg)<br>[ENS220S-BLGT](https://www.digikey.com/en/products/detail/sciosense/ENS220S-BLGT/21278457)<br>$2.70/each<br>[datasheet](https://www.sciosense.com/wp-content/uploads/2023/12/ENS220-Datasheet.pdf) | - Adequate pressure range<br><br>- Supports I2C & SPI communication<br><br>- Absolute pressure guage<br><br>- Measures temperature | - Very low operational voltage range<br><br>- Less suited for application<br><br>- Impossible to solder by hand
+![air3](./assets/images/air4.jfif)<br>[MS580301BA01-00](https://www.digikey.com/en/products/detail/te-connectivity-measurement-specialties/MS580301BA01-00/5277628?s=N4IgTCBcDaILYGcCsAOADAZjQRgEIEEcBaNNEAXQF8g)<br>$20.09/each<br>[datasheet](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5803-01BA&DocType=Data+Sheet&DocLang=English&src-supplier=Digikey) | - Supports I2C communication<br><br>- Has an altimeter function<br><br>- Functions as temperature sensor | - Very expensive<br><br>- Larger data transmissions<br><br>- Complicated interfacing
 
-Selected Component: Option 3 - LPS22HBTR  
-Rational: This sensor is an absolute pressure sensor that can operate with the 3.3V utilized in the subsystem. It also uses I2C to communicate data which is the chosen method for the subsystem. This option also has a higher maximum pressure and is temperature compensated.
+Selected Component: Option 3 - MS580301BA01-00  
+Rational: This sensor is an absolute pressure sensor that can operate with the 3.3V utilized in the subsystem. It also uses I2C to communicate data which is the chosen method for the subsystem. This option was one of the few that could be hand soldered. This option is very expensive, but is worth the trade for the functionality it adds.
 
 ### Comparator
 
