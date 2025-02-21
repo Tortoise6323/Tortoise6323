@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://tortoise6323.github.io/Tortoise6323/schematic/</loc>
+         <lastmod>2025-02-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://tortoise6323.github.io/Tortoise6323/static/node_modules/mathjax/</loc>
          <lastmod>2025-02-21</lastmod>
          <changefreq>daily</changefreq>
