@@ -6,7 +6,7 @@ title: Component Selection
 
 Component Name      | Selection
 --------------------|-----------------
-Microcontroller     | PIC18F47Q10-I/PT  
+Microcontroller     | PIC18F27Q10-I/SO  
 Volatage Regulator  | AP63203WU-7  
 Hall Effect Sensor  | AS5600L-ASOM SOIC LF T&RDP  
 Temperature Sensor  | HIH6030-021-001  
@@ -18,12 +18,12 @@ Comparator          | MCP6541RT-E/OT
 
 Option |  Pros | Cons
 ---|---|---
-![micro1](./assets/images/micro1.jfif)<br>[PIC18F47Q10-I/PT](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786) <br> $1.65/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Familiar due to use in course<br><br>- 128kB Memory<br><br>- 36 IO pins<br><br>- Fast 64MHz processing<br><br>- Inexpensive | - Low power range<br><br>- Could be limiting with amount of peripherals
-![micro2](./assets/images/micro2.jpg)<br>[PIC24FJ256GA705-I/PT](https://www.digikey.com/en/products/detail/microchip-technology/PIC24FJ256GA705-I-PT/6565015) <br> $2.13/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC24FJ256GA705-Family-Data-Sheet-DS30010118E.pdf) | - Supports 16-bit<br><br>- 256kB Memory<br><br>- 40 IO pins | - Unfamiliar product family<br><br>- Unnecessary for requirements<br><br>- Small operational voltage range
-![micro3](./assets/images/micro3.jfif)<br>[PIC18LF8723-I/PT](https://www.digikey.com/en/products/detail/microchip-technology/PIC18LF8723-I-PT/1681042) <br> $16.85/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/39894b.pdf) | - 128kB Memory<br><br>- 70 IO pins<br><br>- Allows for more redundant wiring | - Excessive connection points<br><br>- Expensive<br><br>- Overkill for requirements
+![micro1](./assets/images/micro1.jfif)<br>[PIC18F47Q10-I/PT](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786) <br> $1.65/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Familiar due to use in course<br><br>- 128kB Memory<br><br>- 36 IO pins<br><br>- 64MHz processing<br><br>- Inexpensive | - Low power range<br><br>- Could be limiting with amount of peripherals
+![micro2](./assets/images/micro2.jfif)<br>[PIC18F27Q10-I/SO](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)<br>$1.45/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Same features as microcontroller in course<br><br>- 128kB Memory<br><br>- 64MHz processing<br><br>- Most inexpensive option | - 25 IO pins
+![micro3](./assets/images/micro3.jfif)<br>[PIC18F26Q43-I/SS](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F26Q43-I-SS/11588672)<br>$1.54/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F26-46-56Q43-Data-Sheet-40002171D.pdf) | - | - 25 IO pins<br><br>
 
-Selected Component: Option 1 - PIC18F47Q10-I/PT  
-Rational: This option satisfies the requirements for my team's microcontroller. It is also the easiest to work with as it is used compiously within our course and is familiar. This option also uses very little of the budget and allows for funds to be allocated elsewhere.
+Selected Component: Option 2 - PIC18F27Q10-I/SO  
+Rational: This option satisfies the requirements for my team's microcontroller. It is easily used due to the commmon design with the microcontroller used in the course. This option has more than enough . This option also uses very little of the budget and allows for funds to be allocated elsewhere.
 
 ### Voltage Regulator
 
