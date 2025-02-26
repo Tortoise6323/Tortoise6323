@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Sensor Suite
 tags:
 - tag1
 - tag2

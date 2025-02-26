@@ -7,7 +7,7 @@ title: Component Selection
 Component Name      | Selection
 --------------------|-----------------
 Microcontroller     | PIC18F27Q10-I/SO  
-Volatage Regulator  | AP63203WU-7  
+Volatage Regulator  | LMR16006YQ3DDCRQ1  
 Hall Effect Sensor  | AS5600L-ASOM SOIC LF T&RDP  
 Temperature Sensor  | HIH6030-021-001  
 Humidity Sensor     | HIH6030-021-001  
@@ -19,8 +19,8 @@ Comparator          | MCP6541RT-E/OT
 Option |  Pros | Cons
 ---|---|---
 ![micro1](./assets/images/micro1.jfif)<br>[PIC18F47Q10-I/PT](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786) <br> $1.65/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Familiar due to use in course<br><br>- 128kB Memory<br><br>- 36 IO pins<br><br>- 64MHz processing<br><br>- Inexpensive | - Low power range<br><br>- Could be limiting with amount of peripherals
-![micro2](./assets/images/micro2.jfif)<br>[PIC18F27Q10-I/SO](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)<br>$1.45/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Same features as microcontroller in course<br><br>- 128kB Memory<br><br>- 64MHz processing<br><br>- Most inexpensive option | - 25 IO pins
-![micro3](./assets/images/micro3.jfif)<br>[PIC18F26Q43-I/SS](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F26Q43-I-SS/11588672)<br>$1.54/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F26-46-56Q43-Data-Sheet-40002171D.pdf) | - | - 25 IO pins<br><br>
+![micro2](./assets/images/micro2.jfif)<br>[PIC18F27Q10-I/SO](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)<br>$1.45/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Same features as microcontroller in course<br><br>- 128kB Memory<br><br>- 64MHz processing<br><br>- Most inexpensive option | - 25 IO pins<br><br>- Less IO device system capabilities
+![micro3](./assets/images/micro3.jfif)<br>[PIC18F26Q43-I/SS](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F26Q43-I-SS/11588672)<br>$1.54/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F26-46-56Q43-Data-Sheet-40002171D.pdf) | - Far more digital IO features & devices<br><br>- 64kB Memory<br><br>- 64MHz processing | - 25 IO pins<br><br>- More expensive than other options
 
 Selected Component: Option 2 - PIC18F27Q10-I/SO  
 Rational: This option satisfies the requirements for my team's microcontroller. It is easily used due to the commmon design with the microcontroller used in the course. This option has more than enough . This option also uses very little of the budget and allows for funds to be allocated elsewhere.
@@ -29,12 +29,13 @@ Rational: This option satisfies the requirements for my team's microcontroller. 
 
 Option | Pros | Cons
 ---|---|---
-![pwr1](./assets/images/pwr1.jpg)<br>[AP63203WU-7](https://www.digikey.com/en/products/detail/diodes-incorporated/AP63203WU-7/9858426)<br>$1.38/each<br>[datasheet](https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf) | - Large input voltage range<br><br>- 2A output capacity<br><br>- Simple application circuitry<br><br>- Reduced electromagnetic interference | - Smaller operational temperature range<br><br>- Small package
+![pwr1](./assets/images/pwr1.jpg)<br>[LMR16006YQ3DDCRQ1](https://www.digikey.com/en/products/detail/diodes-incorporated/LMR16006YQ3DDCRQ1/9858426)<br>$1.38/each<br>[datasheet](https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf) | - Large input voltage range<br><br>- 2A output capacity<br><br>- Simple application circuitry<br><br>- Reduced electromagnetic interference | - Smaller operational temperature range<br><br>- Small package
 ![pwr2](./assets/images/pwr2.jfif)<br>[TPS62132RGTR](https://www.digikey.com/en/products/detail/texas-instruments/TPS62132RGTR/2786726)<br>$1.71/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/tps62130.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738923213197) | - 3A output capacity<br><br>- High switching speed<br><br>- Lowest minimum input voltage<br><br>- Provides short circuit protection | - Smaller input voltage range<br><br>- Impossible to solder by hand<br><br>- Complicated application circuitry
 ![pwr3](./assets/images/pwr3.jpg)<br>[LM2675MX-3.3/NOPB](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)<br>$4.36/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/lm2675.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738976377161&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flm2675) | - Large input voltage range<br><br>- High maximum input voltage<br><br>- Larger operational temperature range<br><br>- Has variable output version | - Limited 1A output capacity<br><br>- Higher minimum input voltage<br><br>- Lower switching frequency<br><br>- Expensive
+![pwr4](./assets/images/pwr4.jpg)<br>[LMR16006YQ3DDCRQ1](https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814)<br>$3.49/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1740505335089&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmr16006y-q1) | - Large input voltage range<br><br>- High switching speed allows for more compact application<br><br>- Reasonable footprint size | - Smallest supply amerage capacity<br><br>- More complex application circuit<br><br>- No syncronyous rectifier
 
-Selected Component: Option 1 - AP63203WU-7  
-Rational: This switching power supply has the desired output of 3.3 volts and has an adequate current capacity. It is also in a package that is easily soldered by hand. The required supporting circuitry is simple and will take up less space. The higher switching frequency makes it better suited to the lower input voltages.
+Selected Component: Option 4 - LMR16006YQ3DDCRQ1  
+Rational: This switching power supply has the desired output of 3.3 volts. While the supply capacity is the smallest, the application subsystem does not require excessive amounts of aperage and the 600mA of capacity leaves copious head room on capacity. It is also in a package that is easily soldered by hand. The required supporting circuitry is simple and will take up less space. The higher switching frequency makes it better suited to the lower input voltages.
 
 ### Hall Effect Sensor (Wind Speed)
 
@@ -90,3 +91,7 @@ Option | Pros | Cons
 
 Selected Component: Option 2 - MCP6541RT-E/OT  
 Rational: The push-pull configuration of this option allows for easy implementation. This option also has a lower hysteresis which gives a lower switching threshold for the application.
+
+## Pin Placements
+
+![pinout](./assets/images/pins.png)
