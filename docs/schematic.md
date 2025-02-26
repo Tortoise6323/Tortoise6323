@@ -6,7 +6,7 @@ title: Schematic
 
 ![schematic](./assets/images/schematic.png)
 
-[Download Schematic](./assets/schematic.pdf)
+[Download Schematic](./assets/source_docs/schematic.pdf)
 
 ## Power Budget
 
