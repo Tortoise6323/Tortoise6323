@@ -4,6 +4,8 @@ title: Component Selection
 
 ## Required & Selected Components
 
+The sensor suite uses multiple sensors to gather adequate data about the local weather. A hall effect sensor is used for an anemometer to measure the wind speed. Temperature can be recorded utilizing either the humidity or air pressure sensors. A DC comparator is used with two photoresistors to communicate the relative position of the solar array. Below are the selected components.  
+
 Component Name      | Selection
 --------------------|-----------------
 Microcontroller     | PIC18F27Q10-I/SO  
