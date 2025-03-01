@@ -2,9 +2,13 @@
 title: Component Selection
 ---
 
-## Required & Selected Components
+## Overview
 
-The sensor suite uses multiple sensors to gather adequate data about the local weather. A hall effect sensor is used for an anemometer to measure the wind speed. Temperature can be recorded utilizing either the humidity or air pressure sensors. A DC comparator is used with two photoresistors to communicate the relative position of the solar array. Below are the selected components.  
+The sensor subsystem utilizes an 8-bit PIC18F27Q10-I/SO microcontroller to control the subsystem. I2C is used to interface with the three sensors that gather temperature, humidity level, air pressure, and wind speed. Two photoresistors are used to monitor the angle of the sun relative to the solar panel. A comparator is used to reduce the two analog signals to a digital signal that outputs the binary direction that the panel must move in.
+
+Wind speed is gathered through a rotary hall effect sensor. The sensor records the rpm of the anemometer which is then used to calculate the wind speed. Humidity is measured with a relative humidity sensor. A barometer is used for measuring the air pressure. Surrounding temperature is measured using the humidity sensor, but can be measured through the barometer in the event of a failure.
+
+## Required & Selected Components
 
 Component Name      | Selection
 --------------------|-----------------
@@ -18,14 +22,45 @@ Comparator          | MCP6541RT-E/OT
 
 ### Microcontroller
 
+![micro2](./assets/images/micro2.jfif)
+
+PIC Information | Spec
+---|---
+Model | PIC18F27Q10-I/SO
+Price | $1.45/each
+Links | [Vendor](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)<br>[Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf)
+Absolute Maximum Current | 250 mA
+Supply Voltage Range | 1.8V-5.5V
+Maximum GPIO Current | 50 mA
+Memory               | 128 kB
+Clock Speed          | 64 MHz
+IO Pins              | 25
+External Interrupts  | Yes
+MPLabX Compatibility | MCC Compatible
+
+Module | Available | Needed | Associated Pins
+---|---|---|---
+GPIO | 25 | 6 | *
+ADC  |  4 | 0 | *
+DAC  |  1 | 0 | RA2,RA3,RB7
+UART |  2 | 1 | RB0:RB7<br>RC0:RC7
+SPI  |  1 | 0 | RB0:RB7<br>RC0:RC7
+I2C  |  1 | 1 | RB0:RB7<br>RC0:RC7
+PWM  |  2 | 0 | RA0:RA7<br>RC0:RC7
+ICSP |  1 | 1 | RB6,RB7,RE0
+
+### MPLabX Code Configurator
+
+The configuration of the microcontroller is depicted below. 2 pins are used for UART communication to connected boards, and another 2 pins are used for I2C communication to the sensor peripherals. 4 GPIO pins are used for the UART RTS and CTS lines with an additional digital line sent downstream to the motor subsystem. The remaining GPIO pin is used for the comparator input.  
+![pinout](./assets/images/mcc.png)
+
+This microcontroller is selected primarily due to its familiarity within the class. The smaller 28-pin package, is desirable for its greater pin spacing and reduced amount of IO pins. The requirements of the microcontroller are severely reduced due to utilizing I2C communication between peripherals. Below shows a summarized comparison of all the microcontrollers considered.
+
 Option |  Pros | Cons
 ---|---|---
 ![micro1](./assets/images/micro1.jfif)<br>[PIC18F47Q10-I/PT](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786) <br> $1.65/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Familiar due to use in course<br><br>- 128kB Memory<br><br>- 36 IO pins<br><br>- 64MHz processing<br><br>- Inexpensive | - Low power range<br><br>- Could be limiting with amount of peripherals
 ![micro2](./assets/images/micro2.jfif)<br>[PIC18F27Q10-I/SO](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343)<br>$1.45/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) | - Same features as microcontroller in course<br><br>- 128kB Memory<br><br>- 64MHz processing<br><br>- Most inexpensive option | - 25 IO pins<br><br>- Less IO device system capabilities
 ![micro3](./assets/images/micro3.jfif)<br>[PIC18F26Q43-I/SS](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F26Q43-I-SS/11588672)<br>$1.54/each<br>[datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F26-46-56Q43-Data-Sheet-40002171D.pdf) | - Far more digital IO features & devices<br><br>- 64kB Memory<br><br>- 64MHz processing | - 25 IO pins<br><br>- More expensive than other options
-
-Selected Component: Option 2 - PIC18F27Q10-I/SO  
-Rational: This option satisfies the requirements for my team's microcontroller. It is easily used due to the commmon design with the microcontroller used in the course. This option has more than enough . This option also uses very little of the budget and allows for funds to be allocated elsewhere.
 
 ### Voltage Regulator
 
@@ -34,7 +69,7 @@ Option | Pros | Cons
 ![pwr1](./assets/images/pwr1.jpg)<br>[LMR16006YQ3DDCRQ1](https://www.digikey.com/en/products/detail/diodes-incorporated/LMR16006YQ3DDCRQ1/9858426)<br>$1.38/each<br>[datasheet](https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf) | - Large input voltage range<br><br>- 2A output capacity<br><br>- Simple application circuitry<br><br>- Reduced electromagnetic interference | - Smaller operational temperature range<br><br>- Small package
 ![pwr2](./assets/images/pwr2.jfif)<br>[TPS62132RGTR](https://www.digikey.com/en/products/detail/texas-instruments/TPS62132RGTR/2786726)<br>$1.71/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/tps62130.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738923213197) | - 3A output capacity<br><br>- High switching speed<br><br>- Lowest minimum input voltage<br><br>- Provides short circuit protection | - Smaller input voltage range<br><br>- Impossible to solder by hand<br><br>- Complicated application circuitry
 ![pwr3](./assets/images/pwr3.jpg)<br>[LM2675MX-3.3/NOPB](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)<br>$4.36/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/lm2675.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1738976377161&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flm2675) | - Large input voltage range<br><br>- High maximum input voltage<br><br>- Larger operational temperature range<br><br>- Has variable output version | - Limited 1A output capacity<br><br>- Higher minimum input voltage<br><br>- Lower switching frequency<br><br>- Expensive
-![pwr4](./assets/images/pwr4.jpg)<br>[LMR16006YQ3DDCRQ1](https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814)<br>$3.49/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1740505335089&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmr16006y-q1) | - Large input voltage range<br><br>- High switching speed allows for more compact application<br><br>- Reasonable footprint size | - Smallest supply amerage capacity<br><br>- More complex application circuit<br><br>- No syncronyous rectifier
+![pwr4](./assets/images/pwr4.jpg)<br>[LMR16006YQ3DDCRQ1](https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814)<br>$3.49/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1740505335089&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmr16006y-q1) | - Large input voltage range<br><br>- High switching speed allows for more compact application<br><br>- Reasonable footprint size | - Smallest supply amerage capacity<br><br>- More complex application circuit<br><br>- Lower efficiency
 
 Selected Component: Option 4 - LMR16006YQ3DDCRQ1  
 Rational: This switching power supply has the desired output of 3.3 volts. While the supply capacity is the smallest, the application subsystem does not require excessive amounts of aperage and the 600mA of capacity leaves copious head room on capacity. It is also in a package that is easily soldered by hand. The required supporting circuitry is simple and will take up less space. The higher switching frequency makes it better suited to the lower input voltages.
@@ -92,8 +127,4 @@ Option | Pros | Cons
 ![comp3](./assets/images/comp2.jfif)<br>[TLV7031QDBVRQ1](https://www.digikey.com/en/products/detail/texas-instruments/TLV7031QDBVRQ1/15222328)<br>$0.72/each<br>[datasheet](https://www.ti.com/lit/ds/symlink/tlv7031-q1.pdf) | - Power can be supplied rail-to-rail<br><br>- Push-pull design<br><br>- Decent voltage supply range | - Limited differential voltage<br><br>- Higher hysteresis<br><br>- Limited load driving capability
 
 Selected Component: Option 2 - MCP6541RT-E/OT  
-Rational: The push-pull configuration of this option allows for easy implementation. This option also has a lower hysteresis which gives a lower switching threshold for the application.
-
-## Pin Placements
-
-![pinout](./assets/images/pins.png)
+Rational: The push-pull configuration of this option allows for a simpler application circuit. This option also has a lower hysteresis which gives a lower switching threshold for the application signals.

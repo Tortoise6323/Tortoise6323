@@ -1,4 +1,4 @@
-site_name: Ian Anderson
+site_name: Ian Anderson - Weather Station Sensor Subsystem
 site_url: https://tortoise6323.github.io/Tortoise6323/
 repo_url: https://github.com/Tortoise6323/Tortoise6323
 edit_uri: edit/main/docs/
@@ -6,7 +6,7 @@ theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    scheme: slate
+    scheme: default
     primary: green
     accent: indigo
   font:
@@ -58,7 +58,7 @@ extra_javascript:
  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     
 nav:
- - Home: index.md
+ - Sensor Suite: index.md
  - Block Diagram: block.md
  - Component Selection: component.md
  - Schematic: schematic.md
