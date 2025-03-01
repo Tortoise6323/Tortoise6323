@@ -29,7 +29,7 @@
 
     
       
-        <title>Component Selection - Ian Anderson</title>
+        <title>Component Selection - Ian Anderson - Weather Station Sensor Subsystem</title>
       
     
     
@@ -83,7 +83,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
   
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#required-selected-components" class="md-skip">
+        <a href="#overview" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Ian Anderson" class="md-header__button md-logo" aria-label="Ian Anderson" data-md-component="logo">
+    <a href=".." title="Ian Anderson - Weather Station Sensor Subsystem" class="md-header__button md-logo" aria-label="Ian Anderson - Weather Station Sensor Subsystem" data-md-component="logo">
       
   <img src="../static/logo.svg" alt="logo">
 
@@ -122,7 +122,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Ian Anderson
+            Ian Anderson - Weather Station Sensor Subsystem
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -207,7 +207,7 @@
   
     
   
-  Home
+  Sensor Suite
 
       </a>
     </li>
@@ -312,12 +312,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Ian Anderson" class="md-nav__button md-logo" aria-label="Ian Anderson" data-md-component="logo">
+    <a href=".." title="Ian Anderson - Weather Station Sensor Subsystem" class="md-nav__button md-logo" aria-label="Ian Anderson - Weather Station Sensor Subsystem" data-md-component="logo">
       
   <img src="../static/logo.svg" alt="logo">
 
     </a>
-    Ian Anderson
+    Ian Anderson - Weather Station Sensor Subsystem
   </label>
   
     <div class="md-nav__source">
@@ -344,7 +344,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Sensor Suite
   </span>
   
 
@@ -420,6 +420,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#required-selected-components" class="md-nav__link">
     Required &amp; Selected Components
   </a>
@@ -430,6 +437,13 @@
           <li class="md-nav__item">
   <a href="#microcontroller" class="md-nav__link">
     Microcontroller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mplabx-code-configurator" class="md-nav__link">
+    MPLabX Code Configurator
   </a>
   
 </li>
@@ -478,13 +492,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pin-placements" class="md-nav__link">
-    Pin Placements
-  </a>
   
 </li>
       
@@ -559,6 +566,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#required-selected-components" class="md-nav__link">
     Required &amp; Selected Components
   </a>
@@ -569,6 +583,13 @@
           <li class="md-nav__item">
   <a href="#microcontroller" class="md-nav__link">
     Microcontroller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mplabx-code-configurator" class="md-nav__link">
+    MPLabX Code Configurator
   </a>
   
 </li>
@@ -620,13 +641,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#pin-placements" class="md-nav__link">
-    Pin Placements
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -652,8 +666,10 @@
 
   <h1>Component Selection</h1>
 
+<h2 id="overview">Overview</h2>
+<p>The sensor subsystem utilizes an 8-bit PIC18F27Q10-I/SO microcontroller to control the subsystem. I2C is used to interface with the three sensors that gather temperature, humidity level, air pressure, and wind speed. Two photoresistors are used to monitor the angle of the sun relative to the solar panel. A comparator is used to reduce the two analog signals to a digital signal that outputs the binary direction that the panel must move in.</p>
+<p>Wind speed is gathered through a rotary hall effect sensor. The sensor records the rpm of the anemometer which is then used to calculate the wind speed. Humidity is measured with a relative humidity sensor. A barometer is used for measuring the air pressure. Surrounding temperature is measured using the humidity sensor, but can be measured through the barometer in the event of a failure.</p>
 <h2 id="required-selected-components">Required &amp; Selected Components</h2>
-<p>The sensor suite uses multiple sensors to gather adequate data about the local weather. A hall effect sensor is used for an anemometer to measure the wind speed. Temperature can be recorded utilizing either the humidity or air pressure sensors. A DC comparator is used with two photoresistors to communicate the relative position of the solar array. Below are the selected components.  </p>
 <table>
 <thead>
 <tr>
@@ -693,6 +709,125 @@
 </tbody>
 </table>
 <h3 id="microcontroller">Microcontroller</h3>
+<p><a class="glightbox" href="../assets/images/micro2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="micro2" src="../assets/images/micro2.jfif" /></a></p>
+<table>
+<thead>
+<tr>
+<th>PIC Information</th>
+<th>Spec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model</td>
+<td>PIC18F27Q10-I/SO</td>
+</tr>
+<tr>
+<td>Price</td>
+<td>$1.45/each</td>
+</tr>
+<tr>
+<td>Links</td>
+<td><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343">Vendor</a><br><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">Datasheet</a></td>
+</tr>
+<tr>
+<td>Absolute Maximum Current</td>
+<td>250 mA</td>
+</tr>
+<tr>
+<td>Supply Voltage Range</td>
+<td>1.8V-5.5V</td>
+</tr>
+<tr>
+<td>Maximum GPIO Current</td>
+<td>50 mA</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>128 kB</td>
+</tr>
+<tr>
+<td>Clock Speed</td>
+<td>64 MHz</td>
+</tr>
+<tr>
+<td>IO Pins</td>
+<td>25</td>
+</tr>
+<tr>
+<td>External Interrupts</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>MPLabX Compatibility</td>
+<td>MCC Compatible</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Available</th>
+<th>Needed</th>
+<th>Associated Pins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPIO</td>
+<td>25</td>
+<td>6</td>
+<td>*</td>
+</tr>
+<tr>
+<td>ADC</td>
+<td>4</td>
+<td>0</td>
+<td>*</td>
+</tr>
+<tr>
+<td>DAC</td>
+<td>1</td>
+<td>0</td>
+<td>RA2,RA3,RB7</td>
+</tr>
+<tr>
+<td>UART</td>
+<td>2</td>
+<td>1</td>
+<td>RB0:RB7<br>RC0:RC7</td>
+</tr>
+<tr>
+<td>SPI</td>
+<td>1</td>
+<td>0</td>
+<td>RB0:RB7<br>RC0:RC7</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>1</td>
+<td>1</td>
+<td>RB0:RB7<br>RC0:RC7</td>
+</tr>
+<tr>
+<td>PWM</td>
+<td>2</td>
+<td>0</td>
+<td>RA0:RA7<br>RC0:RC7</td>
+</tr>
+<tr>
+<td>ICSP</td>
+<td>1</td>
+<td>1</td>
+<td>RB6,RB7,RE0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mplabx-code-configurator">MPLabX Code Configurator</h3>
+<p>The configuration of the microcontroller is depicted below. 2 pins are used for UART communication to connected boards, and another 2 pins are used for I2C communication to the sensor peripherals. 4 GPIO pins are used for the UART RTS and CTS lines with an additional digital line sent downstream to the motor subsystem. The remaining GPIO pin is used for the comparator input.<br />
+<a class="glightbox" href="../assets/images/mcc.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pinout" src="../assets/images/mcc.png" /></a></p>
+<p>This microcontroller is selected primarily due to its familiarity within the class. The smaller 28-pin package, is desirable for its greater pin spacing and reduced amount of IO pins. The requirements of the microcontroller are severely reduced due to utilizing I2C communication between peripherals. Below shows a summarized comparison of all the microcontrollers considered.</p>
 <table>
 <thead>
 <tr>
@@ -719,8 +854,6 @@
 </tr>
 </tbody>
 </table>
-<p>Selected Component: Option 2 - PIC18F27Q10-I/SO<br />
-Rational: This option satisfies the requirements for my team's microcontroller. It is easily used due to the commmon design with the microcontroller used in the course. This option has more than enough . This option also uses very little of the budget and allows for funds to be allocated elsewhere.</p>
 <h3 id="voltage-regulator">Voltage Regulator</h3>
 <table>
 <thead>
@@ -749,7 +882,7 @@ Rational: This option satisfies the requirements for my team's microcontroller. 
 <tr>
 <td><a class="glightbox" href="../assets/images/pwr4.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pwr4" src="../assets/images/pwr4.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814">LMR16006YQ3DDCRQ1</a><br>$3.49/each<br><a href="https://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1740505335089&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmr16006y-q1">datasheet</a></td>
 <td>- Large input voltage range<br><br>- High switching speed allows for more compact application<br><br>- Reasonable footprint size</td>
-<td>- Smallest supply amerage capacity<br><br>- More complex application circuit<br><br>- No syncronyous rectifier</td>
+<td>- Smallest supply amerage capacity<br><br>- More complex application circuit<br><br>- Lower efficiency</td>
 </tr>
 </tbody>
 </table>
@@ -899,9 +1032,7 @@ Rational: This sensor is an absolute pressure sensor that can operate with the 3
 </tbody>
 </table>
 <p>Selected Component: Option 2 - MCP6541RT-E/OT<br />
-Rational: The push-pull configuration of this option allows for easy implementation. This option also has a lower hysteresis which gives a lower switching threshold for the application.</p>
-<h2 id="pin-placements">Pin Placements</h2>
-<p><a class="glightbox" href="../assets/images/pins.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pinout" src="../assets/images/pins.png" /></a></p>
+Rational: The push-pull configuration of this option allows for a simpler application circuit. This option also has a lower hysteresis which gives a lower switching threshold for the application signals.</p>
 
 
 
