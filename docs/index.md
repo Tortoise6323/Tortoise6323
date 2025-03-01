@@ -12,6 +12,7 @@ The sensor suite gathers environmental data for the user and positional data to 
 [Block Diagram](./block.md)  
 [Component Selection](./component.md)  
 [Schematic](./schematic.md)  
+[Bill of Materials](./bom.md)  
 [Appendix](./appendix.md)
 
 ## Ian Anderson
