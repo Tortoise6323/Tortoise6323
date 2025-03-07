@@ -49,7 +49,7 @@ I2C  |  1 | 1 | RB0:RB7<br>RC0:RC7
 PWM  |  2 | 0 | RA0:RA7<br>RC0:RC7
 ICSP |  1 | 1 | RB6,RB7,RE0
 
-### MPLabX Code Configurator
+#### MPLabX Code Configurator
 
 The configuration of the microcontroller is depicted below. 2 pins are used for UART communication to connected boards, and another 2 pins are used for I2C communication to the sensor peripherals. 4 GPIO pins are used for the UART RTS and CTS lines with an additional digital line sent downstream to the motor subsystem. The remaining GPIO pin is used for the comparator input.  
 ![pinout](./assets/images/mcc.png)
