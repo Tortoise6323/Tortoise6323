@@ -13,7 +13,7 @@ title: PCB Design
 ## Design Rules Check
 
 ![drc](./assets/images/drc.png)  
-[DRC file](./assets/source_docs/Design%20Rule%20Check%20-%20Sensor_Suite.html)
+[DRC file](./assets/source_docs/Design%20Rule%20Verification%20Report.pdf)
 
 ## 3D PCB Model
 
