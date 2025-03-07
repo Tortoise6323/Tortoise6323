@@ -2,17 +2,18 @@
 title: PCB Design
 ---
 
-## Top Design
+## Top PCB Design
 
 ![top](./assets/images/top.png)
 
-## Bottom Design
+## Bottom PCB Design
 
 ![bot](./assets/images/bot.png)
 
 ## Design Rules Check
 
-[drc](./assets/source_docs/Design%20Rule%20Check%20-%20Sensor_Suite.html)
+![drc](./assets/images/drc.png)  
+[DRC file](./assets/source_docs/Design%20Rule%20Check%20-%20Sensor_Suite.html)
 
 ## 3D PCB Model
 
