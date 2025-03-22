@@ -40,3 +40,7 @@ Example       | 5        | "sensor 1 read error"
 ## Received Messages
 
 There are no message types that concern this subsystem as a recipient.
+
+## MPLabX Code
+
+[Software](./assets/source_docs/sensorSuite.zip)
