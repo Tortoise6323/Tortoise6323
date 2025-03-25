@@ -25,13 +25,13 @@ air pressure | 4      | 10       | 1300
 *Subsystem Error Code*  
 This message type sends an error code corresponding to the amount of current functionality.
 
-.             | byte 1   | byte 2     | byte 3
---------------|----------|------------|--------
-Variable Name | msg_type | system_num | err_code
-Variable Type | uint8_t  | uint8_t    | uint8_t
-Min Value     | 4        | 0          | 0
-Max Value     | 4        | 3          | 2
-Example       | 4        | 1          | 2
+.             | byte 1   | byte 2
+--------------|----------|---------
+Variable Name | msg_type | err_code
+Variable Type | uint8_t  | uint8_t
+Min Value     | 4        | 0
+Max Value     | 4        | 2
+Example       | 4        | 1
 
 *Subsystem Error Message*  
 This message type sends a description about specific system errors
