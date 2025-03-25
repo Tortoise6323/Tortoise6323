@@ -7,13 +7,20 @@ title: Application Programming Interface
 *Broadcast sensor data*  
 This message type broadcasts all sensor data.
 
-.             | byte 1   | byte 2-3   | byte 4-5    | byte 6-7 | byte 8-9
---------------|----------|------------|-------------|----------|---------
-Variable Name | msg_type | wind_speed | temperature | humidity | air_press
-Variable Type | uint8_t  | uint16_t   | uint16_t    | uint16_t | uint16_t
-Min Value     | 1        | 0          | -40         | 20       | 10
-Max Value     | 1        | 100        | 85          | 80       | 1300
-Example       | 1        | 15         | 25          | 43       | 1013
+.             | byte 1   | byte 2     | byte 3-4
+--------------|----------|------------|-----------
+Variable Name | msg_type | sensor_num | sensor_val
+Variable Type | uint8_t  | uint8_t    | uint16_t
+Min Value     | 1        | 1          | -40
+Max Value     | 1        | 4          | 1300
+Example       | 1        | 3          | 37
+
+Sensors      | Number | Data Min | Data Max
+-------------|--------|----------|---------
+wind speed   | 1      | 0        | 100
+temperature  | 2      |-40       | 85
+humidity     | 3      | 20       | 80
+air pressure | 4      | 10       | 1300
 
 *Subsystem Error Code*  
 This message type sends an error code corresponding to the amount of current functionality.
