@@ -636,52 +636,76 @@ This message type broadcasts all sensor data.</p>
 <tr>
 <th>.</th>
 <th>byte 1</th>
-<th>byte 2-3</th>
-<th>byte 4-5</th>
-<th>byte 6-7</th>
-<th>byte 8-9</th>
+<th>byte 2</th>
+<th>byte 3-4</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Variable Name</td>
 <td>msg_type</td>
-<td>wind_speed</td>
-<td>temperature</td>
-<td>humidity</td>
-<td>air_press</td>
+<td>sensor_num</td>
+<td>sensor_val</td>
 </tr>
 <tr>
 <td>Variable Type</td>
 <td>uint8_t</td>
-<td>uint16_t</td>
-<td>uint16_t</td>
-<td>uint16_t</td>
+<td>uint8_t</td>
 <td>uint16_t</td>
 </tr>
 <tr>
 <td>Min Value</td>
 <td>1</td>
-<td>0</td>
+<td>1</td>
 <td>-40</td>
-<td>20</td>
-<td>10</td>
 </tr>
 <tr>
 <td>Max Value</td>
 <td>1</td>
-<td>100</td>
-<td>85</td>
-<td>80</td>
+<td>4</td>
 <td>1300</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>1</td>
-<td>15</td>
-<td>25</td>
-<td>43</td>
-<td>1013</td>
+<td>3</td>
+<td>37</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Sensors</th>
+<th>Number</th>
+<th>Data Min</th>
+<th>Data Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wind speed</td>
+<td>1</td>
+<td>0</td>
+<td>100</td>
+</tr>
+<tr>
+<td>temperature</td>
+<td>2</td>
+<td>-40</td>
+<td>85</td>
+</tr>
+<tr>
+<td>humidity</td>
+<td>3</td>
+<td>20</td>
+<td>80</td>
+</tr>
+<tr>
+<td>air pressure</td>
+<td>4</td>
+<td>10</td>
+<td>1300</td>
 </tr>
 </tbody>
 </table>
