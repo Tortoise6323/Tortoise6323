@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../MPLABXProjects"
+		}
+	],
+	"settings": {
+		"mplab.clangd.arguments": [
+			"--compile-commands-dir=c:\\Users\\808kb\\MPLABXProjects\\_build\\lab09ia\\default"
+		],
+		"mplab.clangd.path": "c:\\Program Files\\Microchip\\xc8\\v3.00\\bin\\xc8-clangd.exe",
+		"C_Cpp.intelliSenseEngine": "disabled",
+		"mplab.mplab-importer.ignorePatterns": [
+			"lab08ia.X/nbproject/configurations.xml",
+			"lab06ia.X/nbproject/configurations.xml",
+			"lab03ia.X/nbproject/configurations.xml",
+			"lab02ia.X/nbproject/configurations.xml"
+		]
+	}
+}
