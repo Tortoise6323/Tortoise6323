@@ -2,6 +2,15 @@
 title: Application Programming Interface
 ---
 
+## Team Member IDs
+
+Name | Subsystem | Address
+---|---|---
+Aarshon | HMI | 0x07
+KD | Websocket | 0x11
+Ian | Sensor | 0x12
+Alex | Motor | 0x69
+
 ## Outgoing Messages
 
 *Broadcast sensor data*  
