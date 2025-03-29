@@ -21,16 +21,16 @@ uint16_t is in big endian form
 --------------|-----------|------------|-----------
 Variable Name | msg_type  | sensor_num | sensor_val
 Variable Type | ``uint8_t`` | ``uint8_t``  | `uint16_t`
-Min Value     | 1 `0x49`  | 1 `0x49`   | -40
-Max Value     | 1 `0x49`  | 4 `0x52`   | 1300
-Example       | 1 `0x49`  | 3 `0x51`   | 37
+Min Value     | 1 `0x31`  | 1 `0x31`   | -40
+Max Value     | 1 `0x31`  | 4 `0x34`   | 1300
+Example       | 1 `0x31`  | 3 `0x33`   | 37
 
 Sensors      | Number   | Data Min | Data Max
 -------------|----------|----------|---------
-wind speed   | 1 `0x49` | 0        | 100
-temperature  | 2 `0x50` |-40       | 85
-humidity     | 3 `0x51` | 20       | 80
-air pressure | 4 `0x52` | 10       | 1300
+wind speed   | 1 `0x31` | 0        | 100
+temperature  | 2 `0x32` |-40       | 85
+humidity     | 3 `0x33` | 20       | 80
+air pressure | 4 `0x34` | 10       | 1300
 
 *Subsystem Error Code*  
 This message type sends an error code corresponding to the amount of current functionality.
@@ -39,9 +39,9 @@ This message type sends an error code corresponding to the amount of current fun
 --------------|----------|---------
 Variable Name | msg_type | err_code
 Variable Type | `uint8_t`  | `uint8_t`
-Min Value     | 4 `0x52` | 0 `0x48`
-Max Value     | 4 `0x52` | 2 `0x50`
-Example       | 4 `0x52` | 1 `0x49`
+Min Value     | 4 `0x34` | 0 `0x30`
+Max Value     | 4 `0x34` | 2 `0x32`
+Example       | 4 `0x34` | 1 `0x31`
 
 *Subsystem Error Message*  
 This message type sends a description about specific system errors
@@ -50,9 +50,9 @@ This message type sends a description about specific system errors
 --------------|----------|----------
 Variable Name | msg_type | err_msg
 Variable Type | `uint8_t`  | char array (`uint8_t`)
-Min Value     | 5 `0x53` | char[1]
-Max Value     | 5 `0x53` | char[57]
-Example       | 5 `0x53` | "sensor 1 read error"
+Min Value     | 5 `0x35` | char[1]
+Max Value     | 5 `0x35` | char[57]
+Example       | 5 `0x35` | "sensor 1 read error"
 
 ## Received Messages
 
