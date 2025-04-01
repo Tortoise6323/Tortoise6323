@@ -655,22 +655,27 @@
 <tr>
 <td>Aarshon</td>
 <td>HMI</td>
-<td><code>0x61</code></td>
+<td><code>0x61 'a'</code></td>
 </tr>
 <tr>
 <td>Alex</td>
 <td>Motor</td>
-<td><code>0x63</code></td>
+<td><code>0x63 'c'</code></td>
 </tr>
 <tr>
 <td>Ian</td>
 <td>Sensor</td>
-<td><code>0x69</code></td>
+<td><code>0x69 'i'</code></td>
 </tr>
 <tr>
 <td>KD</td>
 <td>Websocket</td>
-<td><code>0x6B</code></td>
+<td><code>0x6B 'k'</code></td>
+</tr>
+<tr>
+<td>Broadcast</td>
+<td></td>
+<td><code>0x58 'X'</code></td>
 </tr>
 </tbody>
 </table>
@@ -756,6 +761,20 @@ uint16_t is in big endian form</p>
 </tr>
 </tbody>
 </table>
+<table>
+<thead>
+<tr>
+<th>Sender</th>
+<th>Destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ian <code>'i'</code></td>
+<td>Broadcast <code>'X'</code></td>
+</tr>
+</tbody>
+</table>
 <p><em>Subsystem Error Code</em><br />
 This message type sends an error code corresponding to the amount of current functionality.</p>
 <table>
@@ -774,7 +793,7 @@ This message type sends an error code corresponding to the amount of current fun
 </tr>
 <tr>
 <td>Variable Type</td>
-<td><code>uint8_t</code></td>
+<td><code>char</code></td>
 <td><code>uint8_t</code></td>
 </tr>
 <tr>
@@ -791,6 +810,20 @@ This message type sends an error code corresponding to the amount of current fun
 <td>Example</td>
 <td>4 <code>0x34</code></td>
 <td>1 <code>0x31</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Senders</th>
+<th>Destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alex <code>'c'</code><br>Ian <code>'i'</code><br>Kushagra <code>'k'</code></td>
+<td>Aarshon <code>'a'</code></td>
 </tr>
 </tbody>
 </table>
@@ -812,7 +845,7 @@ This message type sends a description about specific system errors</p>
 </tr>
 <tr>
 <td>Variable Type</td>
-<td><code>uint8_t</code></td>
+<td><code>char</code></td>
 <td>char array (<code>uint8_t</code>)</td>
 </tr>
 <tr>
@@ -829,6 +862,20 @@ This message type sends a description about specific system errors</p>
 <td>Example</td>
 <td>5 <code>0x35</code></td>
 <td>"sensor 1 read error"</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Senders</th>
+<th>Destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alex <code>'c'</code><br>Ian <code>'i'</code><br>Kushagra <code>'k'</code></td>
+<td>Aarshon <code>'a'</code></td>
 </tr>
 </tbody>
 </table>
