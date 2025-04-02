@@ -22,16 +22,16 @@ uint16_t is in big endian form
 --------------|-----------|------------|-----------
 Variable Name | msg_type  | sensor_num | sensor_val
 Variable Type | `uint8_t` | `uint8_t`  | `uint16_t`
-Min Value     | 1 `0x31`  | 1 `0x31`   | -40
-Max Value     | 1 `0x31`  | 4 `0x34`   | 1300
-Example       | 1 `0x31`  | 3 `0x33`   | 37
+Min Value     | 1 `0x31`  | 1          | -40
+Max Value     | 1 `0x31`  | 4          | 1300
+Example       | 1 `0x31`  | 3          | 37
 
 Sensors      | Number   | Data Min | Data Max
 -------------|----------|----------|---------
-wind speed   | 1 `0x31` | 0        | 100
-temperature  | 2 `0x32` |-40       | 85
-humidity     | 3 `0x33` | 20       | 80
-air pressure | 4 `0x34` | 10       | 1300
+wind speed   | 1 `0x01` | 0        | 100
+temperature  | 2 `0x02` |-40       | 85
+humidity     | 3 `0x03` | 20       | 80
+air pressure | 4 `0x04` | 10       | 1300
 
 Sender | Destination
 ---|---
@@ -44,9 +44,9 @@ This message type sends an error code corresponding to the amount of current fun
 --------------|----------|---------
 Variable Name | msg_type | err_code
 Variable Type | `char`   | `uint8_t`
-Min Value     | 4 `0x34` | 0 `0x30`
-Max Value     | 4 `0x34` | 2 `0x32`
-Example       | 4 `0x34` | 1 `0x31`
+Min Value     | 4 `0x34` | 1 `0x01`
+Max Value     | 4 `0x34` | 3 `0x03`
+Example       | 4 `0x34` | 1 `0x01`
 
 Senders | Destination
 ---|---
