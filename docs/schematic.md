@@ -10,6 +10,12 @@ The microcontroller is shown in the center of the schematic. The voltage regulat
 The schematic lacks debugging lights as any debugging can be done through one of the 12 IO pins on the breakout headers.  
 [Download Schematic](./assets/source_docs/schematic.pdf)
 
+## PCB Layout
+
+![PCB top design](./assets/images/top.png)
+
+![PCB bottom design](./assets/images/bot.png)
+
 ## Power Budget
 
 ![power budget](./assets/images/power-budget.png)
