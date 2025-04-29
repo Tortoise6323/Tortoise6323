@@ -21,7 +21,7 @@ uint16_t is in big endian form
 .             | byte 1    | byte 2     | byte 3-4
 --------------|-----------|------------|-----------
 Variable Name | msg_type  | sensor_num | sensor_val
-Variable Type | `uint8_t` | `uint8_t`  | `uint16_t`
+Variable Type |   `char`  | `uint8_t`  | `uint16_t`
 Min Value     | 1 `0x31`  | 1          | -40
 Max Value     | 1 `0x31`  | 4          | 1300
 Example       | 1 `0x31`  | 3          | 37
@@ -44,9 +44,9 @@ This message type sends an error code corresponding to the amount of current fun
 --------------|----------|---------
 Variable Name | msg_type | err_code
 Variable Type | `char`   | `uint8_t`
-Min Value     | 4 `0x34` | 1 `0x01`
-Max Value     | 4 `0x34` | 3 `0x03`
-Example       | 4 `0x34` | 1 `0x01`
+Min Value     | 3 `0x34` | 1 `0x01`
+Max Value     | 3 `0x34` | 3 `0x03`
+Example       | 3 `0x34` | 1 `0x01`
 
 Senders | Destination
 ---|---
@@ -59,9 +59,9 @@ This message type sends a description about specific system errors
 --------------|----------|----------
 Variable Name | msg_type | err_msg
 Variable Type | `char`   | char array (`uint8_t`)
-Min Value     | 5 `0x35` | char[1]
-Max Value     | 5 `0x35` | char[57]
-Example       | 5 `0x35` | "sensor 1 read error"
+Min Value     | 4 `0x35` | char[1]
+Max Value     | 4 `0x35` | char[57]
+Example       | 4 `0x35` | "sensor 1 read error"
 
 Senders | Destination
 ---|---
