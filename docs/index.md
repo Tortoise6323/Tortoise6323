@@ -5,17 +5,19 @@ tags:
 - tag2
 ---
 
-## Sensor Subsystem
+![Subsystem](./assets/images/sensor_project.jpg)
 
-The sensor suite gathers environmental data for the user and positional data to align the device's solar panel. This data is transmitted over the UART daisy chain to the other subsystems.
+Ian Anderson
+
+The sensor suite gathers environmental data via I2C sensors for user and positional data to align the device's solar panel. This data is transmitted over the UART daisy chain to the other subsystems.
 
 [Block Diagram](./block.md)  
 [Component Selection](./component.md)  
-[Schematic](./schematic.md)  
+[Schematic & PCB](./schematic.md)  
 [Bill of Materials](./bom.md)  
 [API](./api.md)  
-[Appendix](./appendix.md)
+[Resources](./resources.md)
 
-## Ian Anderson
+[Team Report](https://egr314-2025-s-306.github.io/EGR314-Team306/)
 
-## EGR 314 - Team 306
+## EGR 314 - Team 306 - S2025

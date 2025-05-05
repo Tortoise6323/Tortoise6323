@@ -16,6 +16,8 @@ The schematic lacks debugging lights as any debugging can be done through one of
 
 ![PCB bottom design](./assets/images/bot.png)
 
+![Assembled PCB](./assets/images/assembly.jpg)
+
 ## Power Budget
 
 ![power budget](./assets/images/power-budget.png)
