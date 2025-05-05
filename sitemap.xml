@@ -11,11 +11,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tortoise6323.github.io/Tortoise6323/appendix/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://tortoise6323.github.io/Tortoise6323/block/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
@@ -26,17 +21,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tortoise6323.github.io/Tortoise6323/charts/</loc>
-         <lastmod>2025-05-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://tortoise6323.github.io/Tortoise6323/component/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tortoise6323.github.io/Tortoise6323/pcb/</loc>
+         <loc>https://tortoise6323.github.io/Tortoise6323/power/</loc>
+         <lastmod>2025-05-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tortoise6323.github.io/Tortoise6323/resources/</loc>
          <lastmod>2025-05-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
