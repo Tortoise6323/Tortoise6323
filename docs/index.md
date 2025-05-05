@@ -13,6 +13,7 @@ The sensor suite gathers environmental data via I2C sensors for user and positio
 
 [Block Diagram](./block.md)  
 [Component Selection](./component.md)  
+[Power Budget](./power.md)  
 [Schematic & PCB](./schematic.md)  
 [Bill of Materials](./bom.md)  
 [API](./api.md)  

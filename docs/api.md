@@ -14,7 +14,8 @@ Broadcast |         | `0x58 'X'`
 
 ## Outgoing Messages
 
-*Broadcast sensor data*  
+### Message Type 1: Sensor Broadcast
+
 This message type broadcasts all sensor data.  
 uint16_t is in big endian form
 
@@ -37,7 +38,8 @@ Sender | Destination
 ---|---
 Ian `'i'` | Broadcast `'X'`
 
-*Subsystem Error Code*  
+### Message Type 3: Subsystem Error Code
+
 This message type sends an error code corresponding to the amount of current functionality.
 
 .             | byte 1   | byte 2
@@ -52,7 +54,8 @@ Senders | Destination
 ---|---
 Alex `'c'`<br>Ian `'i'`<br>Kushagra `'k'` | Aarshon `'a'`
 
-*Subsystem Error Message*  
+### Message Type 4: Subsystem Error Message
+
 This message type sends a description about specific system errors
 
 .             | byte 1   | byte 2-58
@@ -73,4 +76,4 @@ There are no message types that concern this subsystem as a recipient.
 
 ## MPLabX Code
 
-[Software](./assets/source_docs/sensorSuite.zip)
+[Application Workspace](./assets/code/sensorSuite.zip)

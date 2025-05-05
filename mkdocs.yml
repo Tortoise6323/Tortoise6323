@@ -61,7 +61,8 @@ nav:
  - Sensor Suite: index.md
  - Block Diagram: block.md
  - Component Selection: component.md
- - Schematic: schematic.md
+ - Power Budget: power.md
+ - Schematic & PCB: schematic.md
  - Bill of Materials: bom.md
  - API: api.md
  - Appendix: appendix.md
