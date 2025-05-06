@@ -65,7 +65,7 @@ nav:
  - Schematic & PCB: schematic.md
  - Bill of Materials: bom.md
  - API: api.md
- - Appendix: appendix.md
+ - Resources: resources.md
 
 not_in_nav: |
   static
