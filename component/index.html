@@ -794,37 +794,45 @@
 <thead>
 <tr>
 <th>Component Name</th>
-<th>Selection</th>
+<th>Selection w/datasheets</th>
+<th>Application</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Microcontroller</td>
-<td>PIC18F27Q10-I/SO</td>
+<td><a href="../assets/datasheets/PIC18F27Q10.pdf">PIC18F27Q10-I/SO</a></td>
+<td>Controls sensors, handles communication, and converts readings for subsystem</td>
 </tr>
 <tr>
 <td>Volatage Regulator</td>
-<td>LMR16006YQ3DDCRQ1</td>
+<td><a href="../assets/datasheets/lmr16006y-q1.pdf">LMR16006YQ3DDCRQ1</a></td>
+<td>Regulates component voltage to +3.3V</td>
 </tr>
 <tr>
 <td>Hall Effect Sensor</td>
-<td>AS5600L-ASOM SOIC LF T&amp;RDP</td>
+<td><a href="../assets/datasheets/as5600.pdf">AS5600L-ASOM SOIC LF T&amp;RDP</a></td>
+<td>Measures angle of anemometer rotor for calculating wind speed</td>
 </tr>
 <tr>
 <td>Temperature Sensor</td>
-<td>HIH6030-021-001</td>
+<td><a href="../assets/datasheets/hih6000.pdf">HIH6030-021-001</a></td>
+<td>Measures local temperature</td>
 </tr>
 <tr>
 <td>Humidity Sensor</td>
-<td>HIH6030-021-001</td>
+<td><a href="../assets/datasheets/hih6000.pdf">HIH6030-021-001</a></td>
+<td>Measures local relative humidity</td>
 </tr>
 <tr>
 <td>Air Pressure Sensor</td>
-<td>MS580301BA01-00</td>
+<td><a href="../assets/datasheets/MS5803-01BA_B5.pdf">MS580301BA01-00</a></td>
+<td>Measures local air pressure</td>
 </tr>
 <tr>
 <td>Comparator</td>
-<td>MCP6541RT-E/OT</td>
+<td><a href="../assets/datasheets/MCP6541.pdf">MCP6541RT-E/OT</a></td>
+<td>Simplifies analog signals from photoresistors to digital signal</td>
 </tr>
 </tbody>
 </table>
@@ -963,7 +971,7 @@
 <td>- Low power range<br><br>- Could be limiting with amount of peripherals</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/micro2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="micro2" src="../assets/images/micro2.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343">PIC18F27Q10-I/SO</a><br>$1.45/each<br><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">datasheet</a></td>
+<td><a class="glightbox" href="../assets/images/micro2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="micro2" src="../assets/images/micro2.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F27Q10-I-SO/10064343">PIC18F27Q10-I/SO</a><br>$1.45/each<br><a href="../assets/datasheets/PIC18F27Q10.pdf">datasheet</a></td>
 <td>- Same features as microcontroller in course<br><br>- 128kB Memory<br><br>- 64MHz processing<br><br>- Most inexpensive option</td>
 <td>- 25 IO pins<br><br>- Less IO device system capabilities</td>
 </tr>
@@ -1000,7 +1008,7 @@
 <td>- Limited 1A output capacity<br><br>- Higher minimum input voltage<br><br>- Lower switching frequency<br><br>- Expensive</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/pwr4.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pwr4" src="../assets/images/pwr4.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814">LMR16006YQ3DDCRQ1</a><br>$3.49/each<br><a href="https://www.ti.com/lit/ds/symlink/lmr16006y-q1.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&amp;ts=1740505335089&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Flmr16006y-q1">datasheet</a></td>
+<td><a class="glightbox" href="../assets/images/pwr4.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pwr4" src="../assets/images/pwr4.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR16006YQ3DDCRQ1/5395814">LMR16006YQ3DDCRQ1</a><br>$3.49/each<br><a href="../assets/datasheets/lmr16006y-q1.pdf">datasheet</a></td>
 <td>- Large input voltage range<br><br>- High switching speed allows for more compact application<br><br>- Reasonable footprint size</td>
 <td>- Smallest supply amerage capacity<br><br>- More complex application circuit<br><br>- Lower efficiency</td>
 </tr>
@@ -1029,14 +1037,14 @@ Rational: This switching power supply has the desired output of 3.3 volts. While
 <td>- Linear hall effect sensor<br><br>- No serial communication<br><br>- Narrow operational voltage range<br><br>- Higher current draw</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/hall4.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hall4" src="../assets/images/hall4.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/AS5600L-ASOM-SOIC8-LF-T-RDP/10324317">AS5600L-ASOM SOIC LF T&amp;RDP</a><br>$4.54/each<br><a href="https://www.digikey.com/htmldatasheets/production/1647438/0/0/1/as5600-datasheet.pdf">datasheet</a></td>
+<td><a class="glightbox" href="../assets/images/hall4.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hall4" src="../assets/images/hall4.jpg" /></a><br><a href="https://www.digikey.com/en/products/detail/ams-osram-usa-inc/AS5600L-ASOM-SOIC8-LF-T-RDP/10324317">AS5600L-ASOM SOIC LF T&amp;RDP</a><br>$4.54/each<br><a href="../assets/datasheets/as5600.pdf">datasheet</a></td>
 <td>- I2C data communication<br><br>- Rotary hall effect sensor<br><br>- Operates at 3.3v</td>
 <td>- Most expensive option<br><br>- Sensitive to moisture<br><br>- Limited reprogramming</td>
 </tr>
 </tbody>
 </table>
 <p>Selected Component: Option 3 - AS5600L-ASOM SOIC LF T&amp;RDP<br />
-Rational: This option provides an I2C compatible rotary hall effect sensor. The rotary design allows for the easiest implementation of sensor. It is the most expensive option, but comes with the most ideal features.</p>
+Rational: This option provides an I2C compatible rotary hall effect sensor. The rotary design allows for the easiest implementation of sensor. It is the most expensive option, but comes with the most ideal features. The component is also easily accessible from Peralta stock.</p>
 <h3 id="temperature-sensor">Temperature Sensor</h3>
 <table>
 <thead>
@@ -1065,7 +1073,7 @@ Rational: This option provides an I2C compatible rotary hall effect sensor. The 
 </tbody>
 </table>
 <p>Selected Component: Other - HIH6030-021-001<br />
-Rational: The selected component for the humidity sensor doubles as a temperature sensor. This eliminates the need for a standalone sensor.</p>
+Rational: The selected component for the humidity sensor doubles as a temperature sensor. This eliminates the need for a standalone sensor. Offers good resolution while consolidating components.</p>
 <h3 id="humidity-sensor">Humidity Sensor</h3>
 <table>
 <thead>
@@ -1082,7 +1090,7 @@ Rational: The selected component for the humidity sensor doubles as a temperatur
 <td>- Impossible to solder by hand<br><br>- Tiny chip size<br><br>- Lacks standard mode I2C speed</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/hum2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum2" src="../assets/images/hum2.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/HIH6030-021-001/4291625">HIH6030-021-001</a><br>$6.67/each<br><a href="https://prod-edam.honeywell.com/content/dam/honeywell-edam/sps/siot/en-us/products/sensors/humidity-with-temperature-sensors/honeywell-humidicon-hih6000-series/documents/sps-siot-hih6000-datasheet-009073-7-en-ciid-147070.pdf">datasheet</a></td>
+<td><a class="glightbox" href="../assets/images/hum2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="hum2" src="../assets/images/hum2.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/HIH6030-021-001/4291625">HIH6030-021-001</a><br>$6.67/each<br><a href="../assets/datasheets/hih6000.pdf">datasheet</a></td>
 <td>- I2C data interface<br><br>- Has temperature output<br><br>- Affordable cost</td>
 <td>- Lowest relative humidity accuracy<br><br>- Non-condensing</td>
 </tr>
@@ -1094,7 +1102,7 @@ Rational: The selected component for the humidity sensor doubles as a temperatur
 </tbody>
 </table>
 <p>Selected Component: Option 2 - HIH6030-021-001<br />
-Rational: This option has the lowest accuracy; however, its larger package is easier to solder and supports I2C communication. It also doubles as a temperature sensor which offsets the increased cost.</p>
+Rational: This option has the lowest accuracy; however, its larger package is easier to solder and supports I2C communication. It also doubles as a temperature sensor which offsets the increased cost. Many other options were outside of the acceptable price range, and this was a suitable compromise.</p>
 <h3 id="air-pressure-sensor">Air Pressure Sensor</h3>
 <table>
 <thead>
@@ -1116,7 +1124,7 @@ Rational: This option has the lowest accuracy; however, its larger package is ea
 <td>- Very low operational voltage range<br><br>- Less suited for application<br><br>- Impossible to solder by hand</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/air4.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="air3" src="../assets/images/air4.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/te-connectivity-measurement-specialties/MS580301BA01-00/5277628?s=N4IgTCBcDaILYGcCsAOADAZjQRgEIEEcBaNNEAXQF8g">MS580301BA01-00</a><br>$20.09/each<br><a href="https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=MS5803-01BA&amp;DocType=Data+Sheet&amp;DocLang=English&amp;src-supplier=Digikey">datasheet</a></td>
+<td><a class="glightbox" href="../assets/images/air4.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="air3" src="../assets/images/air4.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/te-connectivity-measurement-specialties/MS580301BA01-00/5277628?s=N4IgTCBcDaILYGcCsAOADAZjQRgEIEEcBaNNEAXQF8g">MS580301BA01-00</a><br>$20.09/each<br><a href="../assets/datasheets/MS5803-01BA_B5.pdf">datasheet</a></td>
 <td>- Supports I2C communication<br><br>- Has an altimeter function<br><br>- Functions as temperature sensor</td>
 <td>- Very expensive<br><br>- Larger data transmissions<br><br>- Complicated interfacing</td>
 </tr>
@@ -1145,7 +1153,7 @@ Rational: This sensor is an absolute pressure sensor that can operate with the 3
 <td>- Slower operation speed<br><br>- Smallest voltage supply range</td>
 </tr>
 <tr>
-<td><a class="glightbox" href="../assets/images/comp2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="comp3" src="../assets/images/comp2.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV7031QDBVRQ1/15222328">TLV7031QDBVRQ1</a><br>$0.72/each<br><a href="https://www.ti.com/lit/ds/symlink/tlv7031-q1.pdf">datasheet</a></td>
+<td><a class="glightbox" href="../assets/images/comp2.jfif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="comp3" src="../assets/images/comp2.jfif" /></a><br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV7031QDBVRQ1/15222328">TLV7031QDBVRQ1</a><br>$0.72/each<br><a href="../assets/datasheets/MCP6541.pdf">datasheet</a></td>
 <td>- Power can be supplied rail-to-rail<br><br>- Push-pull design<br><br>- Decent voltage supply range</td>
 <td>- Limited differential voltage<br><br>- Higher hysteresis<br><br>- Limited load driving capability</td>
 </tr>

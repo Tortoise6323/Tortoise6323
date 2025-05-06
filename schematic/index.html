@@ -522,6 +522,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#improvements-moving-forward" class="md-nav__link">
+    Improvements Moving Forward
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -625,6 +632,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#improvements-moving-forward" class="md-nav__link">
+    Improvements Moving Forward
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -651,15 +665,18 @@
   <h1>Schematic & PCB</h1>
 
 <h2 id="schematic">Schematic</h2>
-<p><a class="glightbox" href="../assets/images/schematic.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="schematic" src="../assets/images/schematic.png" /></a></p>
-<p>The microcontroller is shown in the center of the schematic. The voltage regulator circuit is shown in top left, with the programming header for the snap programmer to its right. Below those are the daisy chain headers and breakout headers for the remaining IO pins. The photoresistor comparator circuit is depicted in the bottom left. The three sensors are shown on the right side of the schematic and are all connected through the I2C lines to the microcontroller.<br />
-The schematic lacks debugging lights as any debugging can be done through one of the 12 IO pins on the breakout headers.<br />
+<p><a class="glightbox" href="../assets/images/schematic.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="schematic" src="../assets/images/schematic.png" /></a><br />
 <a href="../assets/pdf/schematic.pdf">Download Schematic</a></p>
+<p>The microcontroller is shown in the center of the schematic. The voltage regulator circuit is shown in top left, with the programming header for the snap programmer to its right. Below those are the daisy chain headers and breakout headers for the remaining IO pins. The photoresistor comparator circuit is depicted in the bottom left. The three sensors are shown on the right side of the schematic and are all connected through the I2C lines to the microcontroller.<br />
+The schematic lacks debugging lights as any debugging can be done through one of the 12 IO pins on the breakout headers.  </p>
+<p>Creating this schematic served to plan out and consolidate the circuitry of the PCB with the components. Values of passive components were taken from the recommended circuit depicted in the datasheets; nonetheless, all values were double checked utilizing the provided formulas. The designed subsystem incorporates multiple sensors to gather wind speed, temperature, relative humidity, and air pressure which will be displayed on the device's oled and sent to a web dashboard for remote data monitoring.</p>
 <h2 id="pcb-layout">PCB Layout</h2>
 <p><a href="../assets/eCAD/EGR314_Ian_Subsytem%20%285-5-2025%2011-53-14%29.zip">Altium Project</a><br />
 <a href="../assets/eCAD/IanAnderson306.zip">Manufacturing Files</a><br />
 <a class="glightbox" href="../assets/images/top.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PCB top design" src="../assets/images/top.png" /></a><br />
 <a class="glightbox" href="../assets/images/bot.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PCB bottom design" src="../assets/images/bot.png" /></a></p>
+<h2 id="improvements-moving-forward">Improvements Moving Forward</h2>
+<p>This project exposed many new issues that I had not encountered before while working with embedded systems. I would like to revisit the theory for good component layouts again as I encounter more issues that I believe were due to unseen issues in my routing design. This project also taught me to better understand the scope of what I am capable of as a reduced scope in the variety of application would better allow me to focus on getting the system I have functional. The majority of my pcb circuitry worked as intended upon initial fabrication; however, both the number and variety of sensors that I had selected created difficulties with getting the serial communication fully working. This primarily taught me that careful application of documentation easily allows for a functional design as the majority of difficulties I experienced were software bugs.</p>
 
 
 
