@@ -14,10 +14,20 @@ Creating this schematic served to plan out and consolidate the circuitry of the 
 
 ## PCB Layout
 
+### Files
+
 [Altium Project](./assets/eCAD/EGR314_Ian_Subsytem%20(5-5-2025%2011-53-14).zip)  
 [Manufacturing Files](./assets/eCAD/IanAnderson306.zip)  
+
+### Individual PCB
+
 ![PCB top design](./assets/images/top.png)  
 ![PCB bottom design](./assets/images/bot.png)
+
+### Proposed Team PCB
+
+![Team PCB top design](./assets/images/team_top.png)  
+![Team PCB bottom design](./assets/images/team_bot.png)
 
 ## Improvements Moving Forward
 
